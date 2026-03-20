@@ -1,0 +1,11 @@
+conda env create -f context-engine-env.yml
+conda activate context-engine
+
+python -c "import fitz, requests, openai; print('OK')"
+
+
+export OPENAI_API_KEY=<<key>>
+export S2_API_KEY=<<key>>   # optional
+
+python run_paper_context.py kalinich-et-al-2026.pdf
+

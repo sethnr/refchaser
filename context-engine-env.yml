@@ -1,0 +1,32 @@
+name: context-engine
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11              # stable, widely supported
+  - pip                      # pip installs for AI libs
+
+  - numpy                    # basic numeric ops
+  - pandas                   # tabular data handling
+
+  - pdfminer.six             # fallback PDF parser
+
+  - requests                 # API calls (OpenAI, Semantic Scholar)
+
+  - tqdm                     # progress bars
+  - rich                     # nicer CLI output
+
+  - rapidfuzz                # better string matching (titles)
+
+  - pydantic                 # structured validation (next step)
+  - tenacity                 # retry logic for APIs
+
+  - pip:
+      - openai>=1.0.0        # primary LLM client
+      - anthropic            # optional swap-in later
+      - sentence-transformers # embeddings (later upgrade)
+      - faiss-cpu            # vector search (later)
+      - ollama               # local LLM experiments
+      - pymupdf              # PDF parsing (fitz)
