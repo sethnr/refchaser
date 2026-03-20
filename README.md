@@ -44,22 +44,6 @@ For each reference, refchaser produces:
 
 ---
 
-## Example output (simplified)
-
-```json
-{
-  "reference": "O’Toole et al. 2021...",
-  "found_in_main_text": true,
-  "context_snippets": [
-    "…used to assign viral lineages (3)…"
-  ],
-  "paper_lookup": {
-    "title": "Assignment of epidemiological lineages...",
-    "year": 2021
-  },
-  "summary": "Introduces the pangolin tool used for lineage assignment in viral genomics."
-}
-```
 
 
 ## Quickstart
@@ -75,5 +59,21 @@ export S2_API_KEY=<<key>>
 ### 2. Run refchaser
 ```bash
 python run_paper_context.py kalinich-et-al-2026.pdf
+```
+### Example output (simplified)
+
+```json
+{
+  "reference": "O’Toole et al. 2021...",
+  "found_in_main_text": true,
+  "context_snippets": [
+    "…used to assign viral lineages (3)…"
+  ],
+  "paper_lookup": {
+    "title": "Assignment of epidemiological lineages...",
+    "year": 2021
+  },
+  "summary": "Introduces the pangolin tool used for lineage assignment in viral genomics."
+}
 ```
 
