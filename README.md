@@ -11,27 +11,10 @@ Given a PDF, it:
 
 The result is a per-reference “context view” of the paper: what each citation is, whether it appears in the text, and how it is being used.
 
----
 
 ## Why this exists
 
 I'm too lazy to chase down all my references any more
-
-You see:
-> “as previously shown (34)”
-
-…and have to:
-- scroll
-- find the reference
-- figure out what it is
-- guess why it’s cited
-
-Refchaser does that upfront:
-- resolves the reference
-- shows where it appears
-- summarises its role
-
----
 
 ## What it does
 
@@ -43,8 +26,6 @@ For each reference, refchaser produces:
 - **short summary** (what the cited work is and why it’s used)
 
 ---
-
-
 
 ## Quickstart
 
