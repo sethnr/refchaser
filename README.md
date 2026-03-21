@@ -58,3 +58,4 @@ python run_paper_context.py kalinich-et-al-2026.pdf
 }
 ```
 
+![example refchaser output](examples/refchaser_example.png)
