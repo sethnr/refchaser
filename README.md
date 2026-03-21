@@ -1,6 +1,6 @@
 # refchaser
 
-Refchaser takes a scientific paper and builds structured context from its references.
+Refchaser is an LLM-assisted tool that takes a scientific paper and builds structured context from its references.
 
 Given a PDF, it:
 - extracts the reference list
@@ -9,7 +9,9 @@ Given a PDF, it:
 - pulls citation context from the main text
 - generates short summaries of what each reference contributes
 
-The result is a per-reference “context view” of the paper: what each citation is, whether it appears in the text, and how it is being used.
+Reference parsing and summarisation use an LLM, retrieval and matching are deterministic. 
+
+The result is a per-reference “context view” of the paper: what each citation is, how it appears in the text, and why it is being used.
 
 
 ## Why this exists
@@ -58,3 +60,4 @@ python run_paper_context.py kalinich-et-al-2026.pdf
 }
 ```
 
+![example refchaser output](examples/refchaser_example.png)
